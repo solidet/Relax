@@ -1,0 +1,3 @@
+accommodation_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AccommodationBundle:Default:index }

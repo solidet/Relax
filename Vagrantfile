@@ -4,7 +4,7 @@
 ## Define some app-specific stuff to be used later during provisioning: ##
 app_vars = {
   APPNAME: 'Relax',
-  DBNAME: 'relax',
+  DBNAME: 'symfony',
   DBUSER: 'vagrant',
   DBPASSWORD: 'vagrant',
   DBTYPE: 'mysql' # 'mysql' or 'postgresql'
