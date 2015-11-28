@@ -41,7 +41,7 @@ twig:
 assetic:
     debug:          "%kernel.debug%"
     use_controller: false
-    bundles:        [ ]
+    bundles:        [ AccommodationBundle, UserBundle ]
     #java: /usr/bin/java
     filters:
         cssrewrite: ~
@@ -53,6 +53,35 @@ assetic:
         bootstrap_css:
             inputs:
                 - '../vendor/twbs/bootstrap/dist/css/bootstrap.min.css'
+        back_end_css:
+            inputs:
+                - '../app/Resources/public/css/back-end.css'
+        jquery:
+            inputs:
+                - '../vendor/components/jquery/jquery.min.js'
+        bootstrap_js:
+            inputs:
+                - '../vendor/twbs/bootstrap/dist/js/bootstrap.min.js'
+        bootstrap_glyphicons_ttf:
+            inputs:
+                - '../vendor/twbs/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf'
+            output: "fonts/glyphicons-halflings-regular.ttf"
+        bootstrap_glyphicons_eot:
+            inputs:
+                - '../vendor/twbs/bootstrap/dist/fonts/glyphicons-halflings-regular.eot'
+            output: "fonts/glyphicons-halflings-regular.eot"
+        bootstrap_glyphicons_svg:
+            inputs:
+                - '../vendor/twbs/bootstrap/dist/fonts/glyphicons-halflings-regular.svg'
+            output: "fonts/glyphicons-halflings-regular.svg"
+        bootstrap_glyphicons_woff:
+            inputs:
+                - '../vendor/twbs/bootstrap/dist/fonts/glyphicons-halflings-regular.woff'
+            output: "fonts/glyphicons-halflings-regular.woff"
+        bootstrap_glyphicons_woff2:
+            inputs:
+                - '../vendor/twbs/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'
+            output: "fonts/glyphicons-halflings-regular.woff2"
 
 # Doctrine Configuration
 doctrine:
